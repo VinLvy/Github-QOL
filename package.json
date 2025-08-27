@@ -1,22 +1,24 @@
 {
-  "name": "github-qol",
-  "version": "1.0.0",
-  "description": "CLI tool to list GitHub accounts you follow that don't follow back",
+  "name": "social-qol",
+  "version": "1.1.0",
+  "description": "CLI tools for social media quality-of-life (check non-followers, mutuals, etc.)",
   "type": "module",
   "bin": {
-    "github-nonfollowers": "scripts/nonfollowers.mjs"
+    "github-nonfollowers": "scripts/github.mjs",
+    "instagram-nonfollowers": "scripts/instagram.mjs"
   },
   "scripts": {
-    "start": "node scripts/nonfollowers.mjs",
-    "nonfollowers": "node scripts/nonfollowers.mjs"
+    "start": "node scripts/github.mjs",
+    "github": "node scripts/github.mjs",
+    "instagram": "node scripts/instagram.mjs"
   },
   "dependencies": {
     "minimist": "^1.2.8",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^3.3.2",
+    "instagram-private-api": "^1.45.1"
   },
   "engines": {
     "node": ">=18"
   },
   "license": "MIT"
 }
-
