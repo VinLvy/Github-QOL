@@ -139,8 +139,8 @@ async function main() {
 function printHelp() {
     console.log(`List GitHub accounts you follow who don't follow you back\n\n` +
         `Usage:\n` +
-        `  node scripts/nonfollowers.mjs --username <your_github_username>\n` +
-        `  GITHUB_TOKEN=ghp_xxx node scripts/nonfollowers.mjs            # infer username from token\n\n` +
+        `  node scripts/github.mjs --username <your_github_username>\n` +
+        `  GITHUB_TOKEN=ghp_xxx node scripts/github.mjs            # infer username from token\n\n` +
         `Options:\n` +
         `  -u, --username   GitHub username (required if no token)\n` +
         `  -t, --token      GitHub token (or set env GITHUB_TOKEN)\n` +
